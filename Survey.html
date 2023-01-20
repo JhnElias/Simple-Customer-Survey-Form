@@ -1,0 +1,48 @@
+<!DOCTYPE hmtl>
+<hmtl lan='en'>
+  <head>
+    <title>Survey Form</title>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+      <h1 id='title'>Survey Form</h1>
+      <p id='description'>Please fill the following:</p>
+
+      <form id='survey-form'>
+
+        <fielfset>
+          <label for='name' id="name-label">Enter your name: <input id='name' type='text'  required placeholder='Jack Black'></label>
+          <label for='email' id="email-label">Enter your email: <input id='email' type="email" required placeholder='jackblack@myemail.com'></label>
+          <label for='number' id="number-label">From one to ten how satisfied you were with our services? <input id='number' type='number' min='1' max='10' required placeholder='10'></label>
+        </fieldset>
+		
+        <fieldset>
+        <label for="dropdown">Would you like to use our services again?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+            <option value="3">Maybe</option> </select>
+        </fielfset>
+		
+		<fieldset>
+          <p>In wich shop you were served?:</p>
+          <label for="petralona"> <input id="petralona" type="radio" name="katastima" class="inline" value='Petralona' /> Petralona</label>
+        <label for="monastiraki"><input id="monastiraki" type="radio" name="katastima" class="inline" value='monastiraki' /> Monastiraki</label>
+        <label for="satisfaction">
+          <input id="satisfaction" type="checkbox" required name="satisfaction" class="inline" value="i-will" />I will tell me friends to go there too!</a>
+        </label>
+        </label>
+        </fielfset>
+        <fieldset>
+          <label for="comments">How can we be better?:
+          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Staff needs to be more polite..."></textarea>
+        </label>
+          </fieldset>
+          <input type="submit" value="Submit"/>
+        </form>
+
+      </body>
+  </html>
